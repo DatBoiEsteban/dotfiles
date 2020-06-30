@@ -1,0 +1,17 @@
+configuration {
+	modi: "drun,window,ssh,run";
+	sidebar-mode: true;
+    display-window: "⌛";
+    display-run: ">_";
+	display-ssh: "📶";
+	display-drun: "🏃🏻‍♂️" ;
+    show-icons: true;
+	terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+	kb-mode-next: "Right";
+	kb-mode-previous: "Left";
+    kb-move-char-back: "Control+b";
+    kb-move-char-forward: "Control+f";
+    font: "Hack 22";
+    fake-transparency: true;
+}

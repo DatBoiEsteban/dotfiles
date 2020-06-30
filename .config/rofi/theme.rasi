@@ -1,0 +1,93 @@
+@import "colors.rasi"
+
+#window {
+  background-color: @invisible;
+  children:         [mode-switcher, mainbox];
+  orientation:      horizontal;
+  height:           15em;
+}
+
+#mainbox {
+  children:         [inputbar,listview];
+  orientation:      vertical;
+  border:           5;
+  border-radius:	  8;
+  border-color:		  @default-border;
+  padding:          0.3em;
+	background-color: @default-background;
+}
+
+#inputbar {
+  background-color: @default-background;
+}
+
+#mode-switcher {
+  padding:          1em 0;
+  orientation:      vertical;
+}
+
+#button {
+  border:           3 0 3 3;
+  border-radius:    8 0 0 8;
+  padding:          0.2em;
+  border-color:     @default-border;
+  background-color: @default-background;
+}
+
+#button.selected {
+  border-color:     @hard-blue;
+  background-color: @alternative-background;
+}
+
+#listview {
+  spacing:          0.2em;
+  scrollbar:        true;
+}
+
+#scrollbar {
+  width:            0.2em;
+  border:           0em;
+  background-color: @alternative-background;
+  handle-color:     @default-foreground;
+  handle-width:     0.08em;
+  padding:          0.08em;
+}
+
+#entry {
+  background-color: @alternative-background;
+  border:           1;
+  margin:           0 0 0.4em 0.8em;
+}
+
+#element {
+  border:           1;
+  border-radius:    3;
+  border-color:     @invisible;
+}
+
+#element.normal.normal {
+  background-color: @invisible;
+}
+
+#element.normal.urgent {
+  background-color: @light-red;
+}
+
+#element.normal.active {
+  background-color: @light-green;
+}
+
+#element.selected.normal {
+  background-color: @light-blue;
+  border-color:     @hard-blue;
+}
+
+#element.selected.urgent {
+  background-color: @light-red;
+  border-color:     @hard-red;
+}
+
+#element.selected.active {
+  background-color: @light-green;
+  border-color:     @hard-green;
+} 
