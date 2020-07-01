@@ -12,6 +12,9 @@ bindsym XF86AudioPrev exec playerctl previous
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
+# Change keyboard layout
+exec --no-startup-id setxkbmap us,es -option 'grp:win_space_toggle'
+
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 1
 default_floating_border normal
